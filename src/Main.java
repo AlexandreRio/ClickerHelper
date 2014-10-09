@@ -16,7 +16,7 @@ public class Main {
           Thread.sleep(25);
           loc = MouseInfo.getPointerInfo().getLocation();
           System.out.println(loc);
-          if (loc.getX() > 650) {
+          if (loc.getX() > 650 && loc.getY() > 220) {
             robot.mousePress(InputEvent.BUTTON1_MASK);
             robot.mouseRelease(InputEvent.BUTTON1_MASK);
           }
